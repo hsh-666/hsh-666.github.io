@@ -11,7 +11,6 @@
   const urlParams = new URLSearchParams(window.location.search);
   const code = urlParams.get('code');
 
-  document.cookie = `Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImYzNmZlMzBkLTg4MTAtNGNkNi04NTAxLWMxYzI2ZmJlNDA0MSJ9.TddqpAhpZpO6-QhG2I6WDhzh6e-tmzCogevMCQ4I_Le42zZpQ_rHyzaRwg3bG3QxFcLEP0Bou4fEkkLoiHvKPA`;
   // 构建目标 URL
   const targetUrl = `http://localhost:8080/base/detail/getAccessTokenAndRefreshTokenByCode?code=${code}`;
 
