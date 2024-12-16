@@ -12,7 +12,7 @@
   const code = urlParams.get('code');
 
   // 构建目标 URL
-  const targetUrl = `http://localhost:8080/base/detail/getAccessTokenAndRefreshTokenByCode?code=${code}`;
+  const targetUrl = `http://localhost:8080/base/detail/getCode?code=${code}`;
 
   // 跳转到目标 URL
   window.location.href = targetUrl;
